@@ -8,10 +8,15 @@ i18n
       fa: {
         translation: {   
           "Add": "افزودن",                 
+          "Description": "شرح",
+          "Duo date": "زمان تحویل",
           "Inbox": "موجود",
           "My account": "حساب من",
+          "operation has done successfully": "عملیات با موفقیت انجام شد",
           "Profile": "پروفایل",
           "Search": "جستجو",
+          "Submit": "ثبت",
+          "Title": "عنوان",
           "Today": "امروز",
           "Trash": "زباله",
         }

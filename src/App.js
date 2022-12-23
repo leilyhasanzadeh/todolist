@@ -6,7 +6,11 @@ import {prefixer} from 'stylis';
 import {CacheProvider} from '@emotion/react';
 import createCache from '@emotion/cache';
 
-import Panel from "./panel";
+import AddTask from "./views/task";
+import TaskList from "./views/taskList";
+import Toolbar from "./components/toolbar";
+import Sidebar from "./components/sidebar";
+import Main from "./components/main";
 require('./translate');
 
 const cacheRtl = createCache({
@@ -21,12 +25,20 @@ function App() {
 
   return (
     <CacheProvider value={cacheRtl}>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/*" element={<Panel />} />
-          </Routes>
-        </BrowserRouter>
+      <ThemeProvider theme={theme}>        
+        <BrowserRouter>    
+          <Toolbar />
+          <div className="flex h-[calc(100vh-4rem)]">
+            <Sidebar />
+            <Main>
+              <Routes>
+                <Route path="/add" element={<AddTask />} />            
+                <Route path="/edit/:index" element={<AddTask />} />            
+                <Route path="/inbox" element={<TaskList />} />            
+              </Routes>
+            </Main>
+          </div>                    
+        </BrowserRouter>        
       </ThemeProvider>
     </CacheProvider>
   );

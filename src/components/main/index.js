@@ -28,7 +28,7 @@ function Main({ t, ...props }) {
   }, [taskList])
 
   return (
-    <main className='relative h-screen overflow-auto	'>
+    <main className='relative	'>
       <div className='h-full'>
         <div className='px-2 mt-4'>
           <div className='overflow-auto'>

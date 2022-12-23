@@ -78,23 +78,6 @@
     font-weight: 400;
   }
 
-
-  [dir=rtl] .slick-next:before,
-  [dir=rtl] .slick-prev:before {
-    color: black;
-  }
-
-  [dir=rtl] .slick-prev {
-    right: 0 !important;
-    z-index: 1;
-  }
-
-  .slick-dots {
-    display: none !important;
-  }
-
-  .react-datetimerange-picker__wrapper {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border-color: #ccc;
-  }
+body {
+  overflow: hidden;
+}

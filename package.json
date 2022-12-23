@@ -1,0 +1,98 @@
+{
+  "name": "TolqExcercise",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@date-io/date-fns-jalali": "^2.14.0",
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/pickers": "^3.3.10",
+    "@mui/icons-material": "^5.3.0",
+    "@mui/lab": "^5.0.0-alpha.66",
+    "@mui/material": "^5.3.0",
+    "@mui/styles": "^5.3.0",
+    "@mui/x-date-pickers": "^5.0.0-alpha.6",
+    "@reduxjs/toolkit": "^1.8.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "apexcharts": "^3.33.0",
+    "axios": "^0.25.0",
+    "babel-loader": "^8.2.3",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "date-fns-jalali": "^2.13.0-0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "favicons": "^6.2.2",
+    "favicons-webpack-plugin": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "i18next": "^21.6.13",
+    "jalaali-js": "^1.2.3",
+    "ol": "^6.13.0",
+    "ol-geocoder": "^4.1.2",
+    "path": "^0.12.7",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.4.1",
+    "prettier": "^2.5.1",
+    "react-confirm-alert": "^3.0.2",
+    "react-datetimerange-picker-correct-locale": "^1.0.0",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.15.5",
+    "react-number-format": "^4.9.3",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "react-select": "^5.3.2",
+    "react-simple-wysiwyg": "^1.0.2",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^8.2.0",
+    "stylis": "^4.0.13",
+    "stylis-plugin-rtl": "^2.1.1",
+    "url-loader": "^4.1.1",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "start": "webpack serve --open --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "css-loader": "^6.6.0",
+    "postcss": "^8.4.6",
+    "regenerator-runtime": "^0.13.9",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.15"
+  }
+}

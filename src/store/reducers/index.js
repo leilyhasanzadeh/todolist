@@ -1,8 +1,8 @@
 export {
-    fetchTaskListStartAction,
-    fetchTaskListSuccessfulAction,
-    fetchTaskListFailedAction,
-    taskListAction,
-    taskSelectedAction,
-    taskReducer
+  fetchTaskListStartAction,
+  fetchTaskListSuccessfulAction,
+  fetchTaskListFailedAction,
+  taskListAction,
+  taskSelectedAction,
+  taskReducer,
 } from "./task";

@@ -38,10 +38,10 @@
     "jalaali-js": "^1.2.3",
     "ol": "^6.13.0",
     "ol-geocoder": "^4.1.2",
+    "onchange": "^7.1.0",
     "path": "^0.12.7",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.1",
-    "prettier": "^2.5.1",
     "react-confirm-alert": "^3.0.2",
     "react-datetimerange-picker-correct-locale": "^1.0.0",
     "react-dom": "^17.0.2",
@@ -63,7 +63,7 @@
   },
   "scripts": {
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "format": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "start": "webpack serve --open --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -90,6 +90,7 @@
     "autoprefixer": "^10.4.2",
     "css-loader": "^6.6.0",
     "postcss": "^8.4.6",
+    "prettier": "2.8.1",
     "regenerator-runtime": "^0.13.9",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",

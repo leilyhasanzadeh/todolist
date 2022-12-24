@@ -1,24 +1,19 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 
-import {    
-  taskReducer,
-  taskListAction,
-  taskSelectedAction
-} from "./reducers";
+import { taskReducer, taskListAction, taskSelectedAction } from "./reducers";
 
-const store = configureStore({
-  reducer: {    
-    task: taskReducer,
+const store = configureStore(
+  {
+    reducer: {
+      task: taskReducer,
+    },
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: false,
+      }),
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: false,
-    })
-}, thunk)
+  thunk
+);
 
-export {
-  store,  
-  taskListAction,
-  taskSelectedAction,
-};
+export { store, taskListAction, taskSelectedAction };

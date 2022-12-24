@@ -1,82 +1,81 @@
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  @font-face {
-    font-family: Vazir;
-    src: url("./assets/font/Vazir-Thin.eot");
-    src: url("./assets/font/Vazir-Thin.eot") format("embedded-opentype"),
-      url("./assets/font/Vazir-Thin.woff") format("woff"),
-      url("./assets/font/Vazir-Thin.ttf") format("truetype");
-    font-weight: 200;
-  }
+@font-face {
+  font-family: Vazir;
+  src: url("./assets/font/Vazir-Thin.eot");
+  src: url("./assets/font/Vazir-Thin.eot") format("embedded-opentype"),
+    url("./assets/font/Vazir-Thin.woff") format("woff"),
+    url("./assets/font/Vazir-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
 
-  @font-face {
-    font-family: Vazir;
-    src: url("./assets/font/Vazir-Medium.eot");
-    src: url("./assets/font/Vazir-Medium.eot") format("embedded-opentype"),
-      url("./assets/font/Vazir-Medium.woff") format("woff"),
-      url("./assets/font/Vazir-Medium.ttf") format("truetype");
-    font-weight: 400;
-  }
+@font-face {
+  font-family: Vazir;
+  src: url("./assets/font/Vazir-Medium.eot");
+  src: url("./assets/font/Vazir-Medium.eot") format("embedded-opentype"),
+    url("./assets/font/Vazir-Medium.woff") format("woff"),
+    url("./assets/font/Vazir-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
 
-  @font-face {
-    font-family: Vazir;
-    src: url("./assets/font/Vazir-Bold.eot");
-    src: url("./assets/font/Vazir-Bold.eot") format("embedded-opentype"),
-      url("./assets/font/Vazir-Bold.woff") format("woff"),
-      url("./assets/font/Vazir-Bold.ttf") format("truetype");
-    font-weight: 700;
-  }
+@font-face {
+  font-family: Vazir;
+  src: url("./assets/font/Vazir-Bold.eot");
+  src: url("./assets/font/Vazir-Bold.eot") format("embedded-opentype"),
+    url("./assets/font/Vazir-Bold.woff") format("woff"),
+    url("./assets/font/Vazir-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 
-  @font-face {
-    font-family: Vazir;
-    src: url("./assets/font/Vazir-Black.eot");
-    src: url("./assets/font/Vazir-Black.eot") format("embedded-opentype"),
-      url("./assets/font/Vazir-Black.woff") format("woff"),
-      url("./assets/font/Vazir-Black.ttf") format("truetype");
-    font-weight: 900;
-  }
+@font-face {
+  font-family: Vazir;
+  src: url("./assets/font/Vazir-Black.eot");
+  src: url("./assets/font/Vazir-Black.eot") format("embedded-opentype"),
+    url("./assets/font/Vazir-Black.woff") format("woff"),
+    url("./assets/font/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+}
 
-  ::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 2em;
-  }
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 2em;
+}
 
-  ::-webkit-scrollbar-button {
-    background: #eee;
-  }
+::-webkit-scrollbar-button {
+  background: #eee;
+}
 
-  ::-webkit-scrollbar-track-piece {
-    background: #eee;
-  }
+::-webkit-scrollbar-track-piece {
+  background: #eee;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #2e3a59;
-  }
+::-webkit-scrollbar-thumb {
+  background: #2e3a59;
+}
 
-
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p,
-  span,
-  button,
-  input,
-  textarea,
-  li,
-  a,
-  label,
-  th,
-  td,
-  div {
-    font-family: Vazir !important;
-    font-weight: 400;
-  }
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+button,
+input,
+textarea,
+li,
+a,
+label,
+th,
+td,
+div {
+  font-family: Vazir !important;
+  font-weight: 400;
+}
 
 body {
   overflow: hidden;

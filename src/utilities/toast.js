@@ -41,16 +41,13 @@ export const showError = (message) => {
 };
 
 export const showWarning = (message) => {
-  toast.warn(
-    <p className="toast-message text-center">{message}</p>,
-    {
-      position: "top-center",
-      autoClose: 10000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    }
-  );
+  toast.warn(<p className="toast-message text-center">{message}</p>, {
+    position: "top-center",
+    autoClose: 10000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
 };

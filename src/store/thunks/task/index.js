@@ -4,7 +4,7 @@ import {
   fetchTaskListStartAction,
   fetchTaskListSuccessfulAction,
   fetchTaskListFailedAction,
-  taskListAction
+  taskListAction,
 } from "root/store/reducers";
 import { showSuccess, showError, showWarning } from "root/utilities/toast";
 
@@ -20,13 +20,13 @@ export const fetchTaskList = (params) => {
     //   params: params
     // })
     //   .then((response) => {
-        dispatch(taskListAction([]));
-        dispatch(fetchTaskListSuccessfulAction());
-      // })
-      // .catch((err) => {
-      //   if (err?.response?.data?.message) showError(err.response.data.message);
-      //   else showError("Server Error");
-      //   dispatch(fetchTaskListFailedAction());
-      // })
+    dispatch(taskListAction([]));
+    dispatch(fetchTaskListSuccessfulAction());
+    // })
+    // .catch((err) => {
+    //   if (err?.response?.data?.message) showError(err.response.data.message);
+    //   else showError("Server Error");
+    //   dispatch(fetchTaskListFailedAction());
+    // })
   };
 };

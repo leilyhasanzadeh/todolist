@@ -6,26 +6,26 @@ i18n
   .init({
     resources: {
       fa: {
-        translation: {   
-          "Add": "افزودن",                 
-          "Description": "شرح",
+        translation: {
+          Add: "افزودن",
+          Description: "شرح",
           "Duo date": "زمان تحویل",
-          "Inbox": "موجود",
+          Inbox: "موجود",
           "My account": "حساب من",
           "operation has done successfully": "عملیات با موفقیت انجام شد",
-          "Profile": "پروفایل",
-          "Search": "جستجو",
-          "Submit": "ثبت",
-          "Title": "عنوان",
-          "Today": "امروز",
-          "Trash": "زباله",
-        }
-      }
+          Profile: "پروفایل",
+          Search: "جستجو",
+          Submit: "ثبت",
+          Title: "عنوان",
+          Today: "امروز",
+          Trash: "زباله",
+        },
+      },
     },
     lng: "fa",
     fallbackLng: "en",
 
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
   });

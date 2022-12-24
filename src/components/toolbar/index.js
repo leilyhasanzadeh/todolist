@@ -12,6 +12,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { withTranslation } from "react-i18next";
+import PropTypes from "prop-types";
 
 import logo from "root/assets/img/logo.png";
 
@@ -55,7 +56,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-function PrimarySearchAppBar({ t, ...props }) {
+function PrimarySearchAppBar({ t }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -187,5 +188,9 @@ function PrimarySearchAppBar({ t, ...props }) {
     </Box>
   );
 }
+
+PrimarySearchAppBar.propTypes = {
+  t: PropTypes.func,
+};
 
 export default withTranslation()(PrimarySearchAppBar);

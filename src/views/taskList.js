@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { withTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import Card from "@mui/material/Card";
@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 import { taskListAction } from "root/store";
 
-const TaskList = ({ t, ...props }) => {
+const TaskList = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const taskList = useSelector((state) => state.task.taskList);

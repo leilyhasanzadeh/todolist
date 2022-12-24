@@ -1,11 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CacheProvider } from "@emotion/react";
-import createCache from "@emotion/cache";
 import { Provider } from "react-redux";
-import rtlPlugin from "stylis-plugin-rtl";
-import { prefixer } from "stylis";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

@@ -12,6 +12,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import { withTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const topList = [
   {
@@ -28,7 +29,7 @@ const topList = [
   },
 ];
 
-function Sidebar({ t, ...props }) {
+function Sidebar({ t }) {
   const navigate = useNavigate();
 
   const list = (anchor) => (
@@ -39,7 +40,7 @@ function Sidebar({ t, ...props }) {
       onKeyDown={() => {}}
     >
       <List>
-        {topList.map((item, index) => (
+        {topList.map((item) => (
           <ListItem key={item.text} disablePadding>
             <ListItemButton
               onClick={() =>
@@ -54,7 +55,7 @@ function Sidebar({ t, ...props }) {
       </List>
       <Divider />
       <List>
-        {[t("Trash")].map((text, index) => (
+        {[t("Trash")].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -69,5 +70,9 @@ function Sidebar({ t, ...props }) {
   );
   return <aside className="shadow-lg">{list("left")}</aside>;
 }
+
+Sidebar.propTypes = {
+  t: PropTypes.func,
+};
 
 export default withTranslation()(Sidebar);

@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { withTranslation } from "react-i18next";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import PropTypes from "prop-types";
 
 import { taskListAction } from "root/store";
 // import { fetchTaskList } from "root/store/thunks/task";
 
-function Main({ t, children, ...props }) {
+function Main({ children }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -24,5 +25,9 @@ function Main({ t, children, ...props }) {
     </main>
   );
 }
+
+Main.propTypes = {
+  children: PropTypes.element,
+};
 
 export default withTranslation()(Main);

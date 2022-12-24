@@ -27,7 +27,6 @@
     "babel-loader": "^8.2.3",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "date-fns-jalali": "^2.13.0-0",
-    "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.4.0",
     "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
@@ -62,8 +61,8 @@
     "webpack-dev-server": "^4.7.4"
   },
   "scripts": {
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "format": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+    "lint": "onchange eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "onchange \"**/*\" --prettier --write --ignore-unknown {{changed}}",
     "start": "webpack serve --open --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -89,6 +88,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "css-loader": "^6.6.0",
+    "eslint": "^8.30.0",
+    "eslint-plugin-react": "^7.31.11",
     "postcss": "^8.4.6",
     "prettier": "2.8.1",
     "regenerator-runtime": "^0.13.9",

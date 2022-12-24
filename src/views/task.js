@@ -8,11 +8,12 @@ import AddTaskIcon from "@mui/icons-material/AddTask";
 import { withTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import { taskListAction } from "root/store";
 import { showSuccess } from "root/utilities/toast";
 
-const Task = ({ t, ...props }) => {
+const Task = ({ t }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const params = useParams();
@@ -100,4 +101,7 @@ const Task = ({ t, ...props }) => {
   );
 };
 
+Task.propTypes = {
+  t: PropTypes.func,
+};
 export default withTranslation()(Task);
